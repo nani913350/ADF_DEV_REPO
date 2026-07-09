@@ -1,0 +1,15 @@
+{
+	"name": "aptivdevdatafactori",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3c2f4ca5-caca-4525-b5c5-3cd7e5c3787b",
+		"tenantId": "820caba3-9592-4385-a9fb-9d514bcdc7f8"
+	}
+}
