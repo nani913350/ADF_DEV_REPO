@@ -1,0 +1,37 @@
+{
+	"name": "LS_SQL_CONNECTION",
+	"properties": {
+		"parameters": {
+			"SQL_SERVER": {
+				"type": "String",
+				"defaultValue": "Manikanta-bandreddy\\MANIKANTABABU"
+			},
+			"DATA_BASE": {
+				"type": "String",
+				"defaultValue": "mani"
+			},
+			"USER_NAME": {
+				"type": "String",
+				"defaultValue": "mani"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "@{linkedService().SQL_SERVER}",
+			"database": "@{linkedService().DATA_BASE}",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "@{linkedService().USER_NAME}",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVaultsql",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "SQLPASSWORD"
+			}
+		}
+	}
+}
