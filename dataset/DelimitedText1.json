@@ -1,0 +1,95 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Make",
+				"type": "String"
+			},
+			{
+				"name": "Model",
+				"type": "String"
+			},
+			{
+				"name": "Year",
+				"type": "String"
+			},
+			{
+				"name": "Fuel_Type",
+				"type": "String"
+			},
+			{
+				"name": "Transmission",
+				"type": "String"
+			},
+			{
+				"name": "Engine_Size",
+				"type": "String"
+			},
+			{
+				"name": "Mileage",
+				"type": "String"
+			},
+			{
+				"name": "Horsepower",
+				"type": "String"
+			},
+			{
+				"name": "Torque",
+				"type": "String"
+			},
+			{
+				"name": "Owners",
+				"type": "String"
+			},
+			{
+				"name": "Accident_History",
+				"type": "String"
+			},
+			{
+				"name": "Service_History",
+				"type": "String"
+			},
+			{
+				"name": "Color",
+				"type": "String"
+			},
+			{
+				"name": "Body_Type",
+				"type": "String"
+			},
+			{
+				"name": "Drivetrain",
+				"type": "String"
+			},
+			{
+				"name": "Fuel_Efficiency",
+				"type": "String"
+			},
+			{
+				"name": "Location",
+				"type": "String"
+			},
+			{
+				"name": "Selling_Price",
+				"type": "String"
+			}
+		]
+	}
+}
